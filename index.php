@@ -4,10 +4,13 @@ session_start();
 $errors = "";
 
 
-$SESSION = ; 
-$POST= ;  
+$SESSION =  ; 
+$POST= "form" ;  
 $Corbeille = ;
-$Taches= ;
+
+$Taches= "faire une app";
+
+echo $Taches
 
 
 ?> 
