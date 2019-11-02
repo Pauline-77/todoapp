@@ -1,16 +1,15 @@
 <?php 
 session_start();
 
-$errors = "";
+// $errors = "";
 
 
-$SESSION =  ; 
-$POST= "form" ;  
-$Corbeille = ;
+//$SESSION =  ; 
+//$POST= "form" ;  
+//$Corbeille = ;
 
-$Taches= "faire une app";
+//$tache1= "faire une app";
 
-echo $Taches
 
 
 ?> 
@@ -41,7 +40,6 @@ echo $Taches
 </table>
 
     <h2>Corbeille</h2>
-
 <table>
     <tr>
     	<td>Acheter des chips</td>

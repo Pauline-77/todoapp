@@ -15,43 +15,74 @@ $task= ["title" => $title, "done" => $done];
 
 // Ex4: Créer une fonction "get-status" qui prend en argument une "task" et renvoie l'état d'accomplissement
 
-function get_status ($task,$title)
-return= $done;
+function get_status ($task) {
+return $task ["done"];
+}
 
 // Ex5: Créer un tableau vide dans une variable $todo
 
-$todo= [empty] 
+$todo= [];
 
 // Ex6: Ajouter la tache $task de l'ex 3 à la fin du tableau $todo
 
-$todo= [ empty, $task] 
+$todo= [$task];
 
 // Ex7: stocker $todo dans la session (clé "todo")
 
-$SESSION(['todo'])=$todo;
+$todo= $_SESSION ["todo"]; 
 
 // Ex 8 : écrire une boucle foreach pour faire un var_dump des éléments de $todo
 
-$arr= 
+foreach ($todo as $t){
 
-foreach ($arr as $todo){
-
-	 var_drump ($todo)
-    
+	 var_drump ($t) 
 }
 
 // Ex 9 : Rajouter d'autres éléments du même type que $task à $todo
 
+$tsak2= [ "title"=> "Lire un livre" => false]
+$tsak3= [ "title"=> "Manger une pomme" => true]
 
-// Ex 8bis : véridier que la boucle de l'exercice 8 fonctionne toujours
+$todo[] = $task2;
+$todo[] = $task3;
 
+//ou 
+//$todo=[ $task, $task2, $task3];
+
+var_drump($todo);
+
+// Ex 8bis : vérifier que la boucle de l'exercice 8 fonctionne toujours
+
+foreach ($todo as $t){
+
+	 var_drump ($t) 
+}
 
 // Ex 10 : Afficher, dans des <li> les titres des éléments de todo
 
+<li> ouvrir les rideaux </li>
+<li> Lire un livre </li>
+<li> Manger une pomme </li> 
 
-//Ex 11 : créer une fonction display_task prenant en paramètre une $task et renvoyant le titre dans une balise span, possédant une class "done" si la classe est faite.
 
+//Ex 11 : créer une fonction display_task prenant en paramètre une $task et renvoyant le titre dans une balise span, possédant une class "done" si la classe est faite. 
+
+function display_task ($task) { 
+$task ["done"= ture];
+return $task ["title" => span];
+}
 
 // Ex 10 bis : remplacer l'affichage du titre par l'appel à la fonction display_task
+ 
+
+
+// Ex 12 : Créer un tableau $recycle vide. À l'aide de la fonction array_splice, enlever un élément de votre choix de la variable $todo, placez le dans $recycle. Affichez $recylce à l'aide d'une boucle.
+
+
+
+
+
+
+
 
 // https://github.com/smwhr/todoapp/blob/master/preliminaries.php
