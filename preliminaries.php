@@ -72,17 +72,23 @@ $task ["done"= ture];
 return $task ["title" => span];
 }
 
-// Ex 10 bis : remplacer l'affichage du titre par l'appel à la fonction display_task
- 
-
-
 // Ex 12 : Créer un tableau $recycle vide. À l'aide de la fonction array_splice, enlever un élément de votre choix de la variable $todo, placez le dans $recycle. Affichez $recylce à l'aide d'une boucle.
 
+$input= todo ("task", "task2", "task3")
 
+array_splice ($input, 2);
+mixed $remplacement = recycle () 
+var_drump ( $recycle);
 
+// ou
+array_splice ( todo &$input , int $offset [, int $length = count($input) [, mixed $replacement = recycle() ]] ) : todo; 
+    var_drump ($recyle);
+}
 
+// Ex 10 bis : remplacer l'affichage du titre par l'appel à la fonction display_task
 
-
-
-
-// https://github.com/smwhr/todoapp/blob/master/preliminaries.php
+ <html>
+<body> <h1> (function display_task ($task)) </h1>
+ <?php echo display_task ($task)?>
+</body>
+</html>
