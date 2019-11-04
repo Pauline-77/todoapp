@@ -89,6 +89,9 @@ array_splice ( todo &$input , int $offset [, int $length = count($input) [, mixe
 
  <html>
 <body> <h1> (function display_task ($task)) </h1>
- <?php echo display_task ($task)?>
+ <?php function display_task ($task) { 
+$task ["done"= ture];
+return $task ["function display_task" => span]; }
+ echo display_task ($task)?>
 </body>
 </html>
